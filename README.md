@@ -1,45 +1,63 @@
-# 13 Object-Relational Mapping (ORM): E-Commerce Back End
+# E-Commerce
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+## Description
+This is the back end for an e-commerce site that uses an Express.js API configured to use Sequelize in order to interact with a MySQL database.
 
-## Your Task
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Credits](#credits)
 
-Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
+## Installation
+After cloning this repository install dependencies by entering the following in your terminal:
 
-## User Story
-
-```md
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
+```terminal
+npm install
 ```
-
-## Acceptance Criteria
-
-```md
-GIVEN a functional Express.js API
-
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
+```terminal
+mysql -u root -p
 ```
+Input MySQL credentials
+```terminal
+use ecommerce_db
+```
+```terminal
+source db/schema.sql
+```
+Exit MySQL shell
+```terminal
+npm run seed
+```
+Start application:
+```terminal
+npm run start
+```
+Use Insomnia to reveal data from GET, POST, PUT and DELETE operations for each route.
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+## Usage
+The app uses create, read, update, and delete operations for each of the following routes: categories, products, and/or tags.
+[Usage Demonstration](<./assets/.mp4>)
 
-### Fill Out the API Routes to Perform RESTful CRUD Operations
+## License
+[License: MIT](https://opensource.org/licenses/MIT)
 
-Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
+## Credits
+https://www.npmjs.com/package/mysql2
+
+https://www.npmjs.com/package/sequelize
+
+https://www.npmjs.com/package/dotenv
+
+
+## Contact
+Github Repo - https://github.com/ceci-00/Verbalize
+Email - ceci.ga003@gmail.com
+
 
 > **Hint**: Be sure to look at the mini-project code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
-
-### Seed the Database
-
-After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
-
-* A walkthrough video that demonstrates the functionality of the e-commerce back end must be submitted, and a link to the video should be included in your readme file.
 
 * The walkthrough video must show all of the technical acceptance criteria being met.
 
