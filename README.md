@@ -20,18 +20,21 @@ npm init -y
 ```terminal
 npm install
 ```
-Commence use of app
+Open MySQL shell:
 ```terminal
 mysql -u root -p
 ```
 Input MySQL credentials
-```terminal
-use ecommerce_db
-```
+
+Create Database:
 ```terminal
 source db/schema.sql
 ```
 Exit MySQL shell
+```terminal
+quit
+```
+Seed Data:
 ```terminal
 npm run seed
 ```
@@ -43,8 +46,9 @@ Use Insomnia to reveal data from GET, POST, PUT and DELETE operations for each r
 
 ## Usage
 The app uses create, read, update, and delete operations for each of the following routes: categories, products, and/or tags.
-<./assets/>
-[Usage Demonstration](<./assets/.mp4>)
+<img src=./assets/e-commerce-ss.png>
+
+[Usage Demonstration](<./assets/e-commerce-vid.mp4>)
 
 ## License
 [License: MIT](https://opensource.org/licenses/MIT)
