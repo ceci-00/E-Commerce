@@ -12,8 +12,11 @@ This is the back end for an e-commerce site that uses an Express.js API configur
 * [Credits](#credits)
 
 ## Installation
-After cloning this repository install dependencies by entering the following in your terminal:
+Node.js and SQL is required. After cloning this repository, change the .env variables to your own MySQL credentials. Install dependencies by entering the following in your terminal:
 
+```terminal
+npm init -y
+```
 ```terminal
 npm install
 ```
@@ -33,12 +36,13 @@ npm run seed
 ```
 Start application:
 ```terminal
-npm run start
+npm start
 ```
 Use Insomnia to reveal data from GET, POST, PUT and DELETE operations for each route.
 
 ## Usage
 The app uses create, read, update, and delete operations for each of the following routes: categories, products, and/or tags.
+<img src=./assets>
 [Usage Demonstration](<./assets/.mp4>)
 
 ## License
@@ -51,6 +55,7 @@ https://www.npmjs.com/package/sequelize
 
 https://www.npmjs.com/package/dotenv
 
+https://github.com/coding-boot-camp/fantastic-umbrella
 
 ## Contact
 Github Repo - https://github.com/ceci-00/Verbalize
