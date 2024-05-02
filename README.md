@@ -46,7 +46,7 @@ Use Insomnia to reveal data from GET, POST, PUT and DELETE operations for each r
 
 ## Usage
 The app uses create, read, update, and delete operations for each of the following routes: categories, products, and/or tags.
-<img src=./assets/e-commerce-ss.png>
+![screenshot of routes demo using Insomnia](./assets/e-commerce-ss.png)
 
 [Usage Demonstration](<./assets/e-commerce-vid.mp4>)
 
